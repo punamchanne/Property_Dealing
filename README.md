@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏠 AI Homes - Real Estate Platform
 
-## Getting Started
+AI Homes is a premium, full-stack real estate platform designed to provide an immersive property buying and selling experience. It features cutting-edge technology including real-time 3D and 360° property viewing, role-based dashboards, and a sleek, modern UI.
 
-First, run the development server:
+![AI Homes Hero](https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=400&fit=crop)
 
+## 🚀 Key Features
+
+### 🌟 Immersive Property Viewing
+- **Interactive 3D Mode**: Uses **React Three Fiber (R3F)** and **Three.js** to transform standard property photos into interactive 3D scenes with depth and perspective.
+- **360° Panorama**: Integrated **Photo Sphere Viewer** allowing users to rotate and explore rooms in a full 360-degree environment from a single flat image.
+- **Room-wise Filtering**: Navigate through different parts of the property (Living Room, Bedrooms, Kitchen, etc.) with a single click.
+
+### 👥 Role-Based Dashboards
+- **User Dashboard**: Manage wishlists, track meeting schedules (Virtual/In-person), and view saved properties.
+- **Owner Dashboard**: Comprehensive property management, analytics on listing performance, and easy add/edit property forms.
+- **Admin Panel**: High-level oversight of all platform data, user management, and system statistics.
+
+### 🎨 Premium UI/UX
+- **Modern Red & White Theme**: A bold, professional aesthetic optimized for clarity and high conversion.
+- **Responsive Design**: Seamless experience across Mobile, Tablet, and Desktop.
+- **Advanced Filtering**: Search properties by type (Apartment, Villa, Plot, Commercial), location, price range, and amenities.
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 14+, TypeScript, Tailwind CSS, Framer Motion
+- **3D/360 Engine**: Three.js, @react-three/fiber, react-photo-sphere-viewer
+- **Backend**: Node.js, Express, MongoDB with Mongoose
+- **Authentication**: JWT-based secure authentication
+- **Icons**: Lucide React
+
+## 📦 Installation & Setup
+
+### Prerequisites
+- Node.js (v18+)
+- MongoDB (Running locally or Atlas)
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/punamchanne/Property_Dealing.git
+cd Property_Dealing
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Frontend Setup
+```bash
+# Install dependencies
+npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Set up environment variables
+# Copy .env.example to .env and fill in details
+cp .env.example .env
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Run development server
+npm run dev
+```
 
-## Learn More
+### 3. Backend Setup
+```bash
+cd backend
 
-To learn more about Next.js, take a look at the following resources:
+# Install dependencies
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Set up environment variables
+# Fill in your MONGODB_URI and JWT_SECRET in .env
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+# Seed the database (Optional but recommended for demo)
+node seed.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# Start backend server
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Crafted with ❤️ for the future of Real Estate.
